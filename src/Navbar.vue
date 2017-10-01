@@ -5,6 +5,7 @@
       <button @click="clicked = !clicked" class="icon">&#9776;</button>
     </div>
     <div class="links">
+      <hr v-if="clicked"></hr>
       <a class="push-right" href="#portfolio"> PORTFOLIO </a>
       <a class="push-right" href="#about"> ABOUT </a>
       <a class="push-right" href="#contact"> CONTACT </a>
