@@ -1,7 +1,7 @@
 <template>
   <div id="navbar" v-bind:class="{responsive: clicked}">
     <div class="name">
-      <a href="#"> Developer</a>
+      <a href="#" class="pull-left"> STUDENT DEVELOPER</a>
       <button @click="clicked = !clicked" class="icon">&#9776;</button>
     </div>
     <div class="links">
@@ -32,10 +32,13 @@ a {
   text-decoration: none;
 }
 
+.links {
+  float: right;
+}
+
 .icon {
   display: none;
   float: right;
-  font-size: 1.2em;
   background-color: #2c3e50;
   color: white;
   padding: 25px;
@@ -61,6 +64,7 @@ a {
 
 .responsive .links {
   display: block;
+  float: none;
 }
 
 .responsive .links .push-right {
@@ -69,12 +73,13 @@ a {
   text-align: left;
 }
 
-
 .name {
   float: left;
-  font-size: 2em;
 }
 
+.pull-left {
+  float: left;
+}
 
 .push-right {
   float: right;
@@ -85,11 +90,12 @@ a {
     display: none;
   }
   .icon {
-    display: block;
+    display: inline;
   }
   .name {
     display: block;
     float: none;
+    overflow: hidden;
   }
 }
 </style>
