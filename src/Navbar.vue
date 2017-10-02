@@ -6,9 +6,9 @@
     </div>
     <div class="links">
       <hr v-if="clicked"></hr>
-      <a class="push-right" href="#portfolio"> PORTFOLIO </a>
-      <a class="push-right" href="#about"> ABOUT </a>
       <a class="push-right" href="#contact"> CONTACT </a>
+      <a class="push-right" href="#about"> ABOUT </a>
+      <a class="push-right" href="#portfolio"> PORTFOLIO </a>
     </div>
   </div>
 </template>
@@ -72,6 +72,7 @@ a {
   display: block;
   float: none;
   text-align: left;
+  padding: 15px;
 }
 
 .name {
