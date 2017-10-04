@@ -19,8 +19,8 @@ export default {
 .header {
   background-color: #18bc9c;
   text-align: center;
-  padding-top: 130px;
-  padding-bottom: 80px;
+  padding-top: 140px;
+  padding-bottom: 90px;
 }
 
 .intro-text {

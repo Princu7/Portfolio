@@ -22,11 +22,17 @@ export default {
 <style scoped>
 .image {
   position: relative;
+  display: inline-block;
 }
 
 .image img {
   max-width: 100%;
   height: auto;
+}
+
+
+.project-title {
+  color: #2c3e50
 }
 
 .overlay {
@@ -47,6 +53,6 @@ export default {
 }
 
 .image:hover .overlay {
-  opacity: 0.5;
+  opacity: 0.8;
 }
 </style>

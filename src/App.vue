@@ -4,6 +4,7 @@
     <main-header></main-header>
     <div id="portfolio">
       <h2 class="title"> PORTFOLIO </h2>
+      <hr class="dash"></hr>
       <div class="projects">
         <div class="project" v-for="project in projects">
           <project preview="1" v-bind:project="project"></project>
@@ -64,14 +65,23 @@ body {
 
 .title {
   text-align: center;
-  font-size: 2.5em;
-  text-decoration-line: underline;
-  color: #2c3e50
+  font-size: 3.0em;
+  color: #2c3e50;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+
+.dash {
+  color: black;
+  width: 22%;
+  margin: 0 auto;
+  height: 4px;
+  background-color: black;
 }
 
 .projects {
   width: 90%;
-  margin: 20px auto;
+  margin: 40px auto;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -82,5 +92,6 @@ body {
   flex-shrink: 1;
   padding-right: 40px;
   flex-basis: 300px;
+  margin-bottom: 20px;
 }
 </style>
