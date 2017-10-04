@@ -51,6 +51,11 @@ a {
   background-color: #2c3e50;
   color: white;
   overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .responsive {
